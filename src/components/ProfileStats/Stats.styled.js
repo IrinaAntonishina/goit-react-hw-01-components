@@ -4,6 +4,8 @@ export const List = styled.ul`
 display: flex;
 background-color: #e4f5f2;
 border-top: 1px solid #c5dbd7;
+border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
 
 `
 
@@ -13,10 +15,10 @@ align-items: center;
 flex-direction: column;
 justify-content: center;
 gap: 6px;
-width: 81px;
-height: 60px;
+flex-basis: calc(100%/3);
+padding: 15px 0 15px 0;
 border-right: ${props => props.border};
-border-left: ${props => props.border};
+border-left: ${prop => prop.border};
 `
 
 export const Text = styled.span`

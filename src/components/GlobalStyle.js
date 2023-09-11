@@ -36,4 +36,12 @@ max-width: 100%;
   h1 {
     margin: 0;
   } 
+  h2 {
+    margin: 0;
+  }
+
+  th{
+    padding: 0;
+    
+  }
 `

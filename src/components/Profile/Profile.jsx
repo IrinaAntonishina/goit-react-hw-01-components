@@ -1,7 +1,7 @@
 import { Description } from "components/ProfileDescrip/Description";
 import user from '../user';
 import { Stats } from "components/ProfileStats/Stats";
-import { GlobalStyle } from "components/GlobalStyle";
+
 import { DivEl } from "components/Profile/Profile.styled";
 
 export const Profile = () => {
@@ -17,7 +17,7 @@ export const Profile = () => {
        />
 
       <Stats stats={user.stats}/>
-      <GlobalStyle />
+      
 </DivEl>); 
 }
 
