@@ -1,17 +1,11 @@
+import { Avatar, Name, Online } from './FriendList.styled';
 
-
-import { Avatar, ItemFriend, Name, Online } from "./FriendList.styled"
-
-export const FriendListItem = ({friends}) => {
-    return (
-       <>{friends.map(friend => (
-        <ItemFriend key={friend.id}>
-            {friend.isOnline ? <Online color={'179c0b'}>{}</Online> : <Online color={'eb4034'}>{}</Online>}
-  <Avatar src={friend.avatar} alt="User avatar" width="60" />
-  <Name>{friend.name}</Name>
-</ItemFriend>
-       ))
-       }
-       </>
-    )
-}
+export const FriendListItem = ({ name, avatar, isOnline }) => {
+  return (
+    <>
+      <Online color={isOnline ? '179c0b' : 'eb4034'}>{}</Online>
+      <Avatar src={avatar} alt="User avatar" width="60" />
+      <Name>{name}</Name>
+    </>
+  );
+};
